@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    int i,j,size;
+    printf("enter size of string \n");
+    scanf( "%s",&size);
+    size=strlen(str);
+    for(i=0;(str[i]<=size/2);i++)
+    {
+        if(str[i]==str[i-size-1])
+        size++;
+    }
+    
+    if(size==i)
+    printf("palindrome\n");
+    else
+    printf("Not a palindrome\n");
+return 0;
+    
+}
+
